@@ -18,6 +18,8 @@ private slots:
 
 private:
     void printMessage(QString message, QColor color = QColor::fromRgb(0, 0, 0));
+    void onSocketConnected();
+    void onSocketReadyRead();
 
 private:
     QTcpSocket* m_socket = nullptr;
